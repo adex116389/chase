@@ -1,0 +1,40 @@
+.steps .step {
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps .step p {
+  padding: 0;
+  margin: 0;
+}
+
+.steps .step p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #58595b;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.steps .step.active {
+  color: #d71e28;
+}
+.steps .step.active p {
+  font-weight: 600;
+}
+.steps .step.active p span {
+  font-weight: 600;
+}
+
+.steps .step.active p:nth-child(2) {
+  color: white;
+  border: 1px solid #d71e28;
+  background-color: #d71e28;
+}
